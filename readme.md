@@ -1,4 +1,4 @@
-# Socket.io Chat Example
+# Socket.io Whiteboard Example
 
 Socket.io across multiple nodes, backed by redis, on Heroku.
 
@@ -29,6 +29,8 @@ $ herouk scale web=4:standard-1x
 $ yarn
 $ heroku local -f Procfile.dev
 ```
+
+## Testing multiple nodes locally
 
 You'll need a redis server.
 Set one up on localhost, or just use a free Heroku-hosted server:
