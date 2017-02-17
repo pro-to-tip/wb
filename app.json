@@ -1,5 +1,5 @@
 {
-  "name": "Socket.io-Whiteboard for Heroku",
+  "name": "Socket.io-Whiteboard",
   "description": "An example of Socket.io across multiple nodes backed by Redis",
   "keywords": ["node", "express", "socket.io", "websockets", "whiteboard", "example"],
   "addons": ["heroku-redis"]
