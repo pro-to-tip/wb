@@ -1,6 +1,7 @@
 {
   "name": "socket.io-whiteboard-distributed",
   "version": "1.0.0",
+  "keywords": ["node", "heroku", "express", "socket.io", "websockets", "whiteboard", "example"],
   "engines": {
     "node": "7.4.x"
   },

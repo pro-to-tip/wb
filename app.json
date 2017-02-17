@@ -1,6 +1,6 @@
 {
-  "name": "Socket.io-Chat for Heroku",
+  "name": "Socket.io-Whiteboard for Heroku",
   "description": "An example of Socket.io across multiple nodes backed by Redis",
-  "keywords": ["node", "express", "socket.io", "websockets", "chat", "example"],
+  "keywords": ["node", "heroku", "express", "socket.io", "websockets", "whiteboard", "example"],
   "addons": ["heroku-redis"]
 }
