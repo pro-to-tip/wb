@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Socket.IO Whiteboard</title>
+    <title>Socket.io Whiteboard</title>
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
     </style>
@@ -53,7 +53,6 @@
       }
 
       function resize() {
-        console.log('resizing')
         painting.width = window.innerWidth
         painting.height = window.innerHeight
         socket.emit('refresh')

@@ -3,24 +3,16 @@
 const http = require('http')
 const express = require('express')
 const socketIO = require('socket.io')
-const socketRedis = require('socket.io-redis')
 const path = require('path')
 const randomColor = require('randomcolor')
 
 const PORT = process.env.PORT || 5000
-const REDIS_URL = process.env.REDIS_URL
-const REDIS_KEY = process.env.REDIS_KEY || 'socket-whiteboard'
 const INDEX = path.resolve(__dirname, '../index.html')
 
 const app = express()
 const server = http.createServer(app)
 const io = socketIO(server)
 const brushes = []
-
-// Support multiple nodes (http://socket.io/docs/using-multiple-nodes/)
-if (REDIS_URL) {
-  io.adapter(socketRedis(REDIS_URL, { key: REDIS_KEY }))
-}
 
 app.get('/', (req, res) => res.sendFile(INDEX))
 

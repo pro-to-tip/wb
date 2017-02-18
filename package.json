@@ -1,7 +1,15 @@
 {
-  "name": "socket.io-whiteboard-distributed",
+  "name": "socket.io-whiteboard",
   "version": "1.0.0",
-  "keywords": ["node", "heroku", "express", "socket.io", "websockets", "whiteboard", "example"],
+  "keywords": [
+    "node",
+    "heroku",
+    "express",
+    "socket.io",
+    "websockets",
+    "whiteboard",
+    "example"
+  ],
   "engines": {
     "node": "7.4.x"
   },
@@ -17,7 +25,6 @@
   "dependencies": {
     "express": "^4.14.0",
     "randomcolor": "^0.4.4",
-    "socket.io": "^1.7.2",
-    "socket.io-redis": "^3.1.0"
+    "socket.io": "^1.7.2"
   }
 }
