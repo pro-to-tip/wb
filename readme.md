@@ -8,7 +8,6 @@ Socket.io across multiple nodes, backed by redis, on Heroku.
 
 ```
 $ heroku create
-$ heroku addons:create heroku-redis
 $ git push heroku master
 $ heroku open
 ```
@@ -29,16 +28,3 @@ $ herouk scale web=4:standard-1x
 $ yarn
 $ heroku local -f Procfile.dev
 ```
-
-## Testing multiple nodes locally
-
-You'll need a redis server.
-Set one up on localhost, or just use a free Heroku-hosted server:
-
-```
-$ heroku create
-$ heroku addons:create heroku-redis
-$ heroku config -s > .env
-```
-
-(the last line copies the REDIS_URL value to your local .env config file)
